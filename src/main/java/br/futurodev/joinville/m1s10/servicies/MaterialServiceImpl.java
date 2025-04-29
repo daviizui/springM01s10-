@@ -25,6 +25,7 @@ public class MaterialServiceImpl implements MaterialService{
 
     @Override
     public MaterialResponseDto getById(Long id) {
+
         return MaterialMapper.toDto(findEntityById(id));
     }
 
